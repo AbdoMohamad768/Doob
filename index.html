@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="./css/all.min.css">
     <!-- Main Style Sheet -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Script Sheet -->
+    <script defer src="./script.js"></script>
   </head>
   <body>
     <!-- Start Header -->
@@ -47,7 +49,7 @@
     </div>
     <!-- End Header -->
     <!-- Start Landing -->
-    <div id="landing" class="landing">
+    <div id="landing" class="landing section">
       <div class="container">
         <img src="./images/landing pichure.png" alt>
         <img src="./images/landing-shape.png" alt>
@@ -66,7 +68,7 @@
     </div>
     <!-- End Landing -->
     <!-- Start Features -->
-    <div id="features" class="features">
+    <div id="features" class="features section">
       <div class="container">
         <img src="./images/features-shape.png" alt>
         <div class="content">
@@ -95,34 +97,53 @@
     </div>
     <!-- End Features -->
     <!-- Start Our Company -->
-    <div id="our-company" class="our-company">
+    <div id="our-company" class="our-company section">
       <div class="container">
         <img src="./images/our-company-shape.png" alt>
         <img src="./images/our-company-picture.png" alt>
         <div class="content">
           <div class="title">OUR COMPANY</div>
           <h1>Some Fine <br> Words About Us</h1>
-          <p>
-            Vestibulum ac diam sit amet quam vehicula elementum amet est on dui.
-            Nulla porttitor accumsan tincidunt.Vestibulum ac diam sit amet.
-            <br>
-            Quam vehicula elementum amet est on dui.
-            Nulla porttitor accumsan tincidunt
-          </p>
+          <div class="comments">
+            <p>
+              Vestibulum ac diam sit amet quam vehicula elementum amet est on
+              dui.
+              Nulla porttitor accumsan tincidunt.Vestibulum ac diam sit amet.
+              <br>
+              Quam vehicula elementum amet est on dui.
+              Nulla porttitor accumsan tincidunt
+            </p>
+            <p>
+              Vestibulum ac diam sit amet quam vehicula elementum amet est on
+              dui.
+              Nulla porttitor accumsan tincidunt.Vestibulum ac diam sit amet.
+              <br>
+              Quam vehicula elementum amet est on dui.
+              Nulla porttitor accumsan tincidunt
+            </p>
+            <p>
+              Vestibulum ac diam sit amet quam vehicula elementum amet est on
+              dui.
+              Nulla porttitor accumsan tincidunt.Vestibulum ac diam sit amet.
+              <br>
+              Quam vehicula elementum amet est on dui.
+              Nulla porttitor accumsan tincidunt
+            </p>
+          </div>
           <div class="sliders">
-            <a href="#" class="go-left">
+            <button disabled="true" value="slide-left" class="btn-slide">
               <i class="fa-solid fa-arrow-left"></i>
-            </a>
-            <a href="#" class="go-left">
+            </button>
+            <button value="slide-right" class="btn-slide active">
               <i class="fa-solid fa-arrow-right"></i>
-            </a>
+            </button>
           </div>
         </div>
       </div>
     </div>
     <!-- End Our Company -->
     <!-- Start Our Work -->
-    <div id="our-work" class="our-work">
+    <div id="our-work" class="our-work section">
       <div class="container">
         <img src="./images/our-work-shape.png" alt>
         <div class="content">
@@ -131,41 +152,83 @@
               <h1>See some of our <br>Creative work.</h1>
             </div>
             <div class="sliders">
-              <a href="#" class="go-left">
+              <button disabled="true" value="slide-left" class="btn-slide">
                 <i class="fa-solid fa-arrow-left"></i>
-              </a>
-              <a href="#" class="go-right">
+              </button>
+              <button value="slide-right" class="btn-slide active">
                 <i class="fa-solid fa-arrow-right"></i>
-              </a>
+              </button>
             </div>
           </div>
           <div class="works">
-            <div class="img-holder">
-              <img src="./images/work-1.jpeg" alt>
+            <div class="works-slide">
+              <div class="row">
+                <div class="img-holder">
+                  <img src="./images/work-1.jpeg" alt>
+                </div>
+                <div class="img-holder">
+                  <img src="./images/work-2.jpg" alt>
+                </div>
+                <div class="img-holder">
+                  <img src="./images/work-3.png" alt>
+                </div>
+              </div>
+              <div class="row">
+                <div class="img-holder">
+                  <img src="./images/work-4.jpg" alt>
+                </div>
+                <div class="img-holder">
+                  <img src="./images/work-5.jpeg" alt>
+                </div>
+                <div class="img-holder">
+                  <img src="./images/work-6.png" alt>
+                </div>
+              </div>
+              <div class="row">
+                <div class="img-holder">
+                  <img src="./images/work-7.jpeg" alt>
+                </div>
+                <div class="img-holder">
+                  <img src="./images/work-8.jpg" alt>
+                </div>
+                <div class="img-holder">
+                  <img src="./images/work-9.png" alt>
+                </div>
+              </div>
+              <div class="more">Show More.</div>
             </div>
-            <div class="img-holder">
-              <img src="./images/work-2.jpg" alt>
-            </div>
-            <div class="img-holder">
-              <img src="./images/work-3.png" alt>
-            </div>
-            <div class="img-holder">
-              <img src="./images/work-4.jpg" alt>
-            </div>
-            <div class="img-holder">
-              <img src="./images/work-5.jpeg" alt>
-            </div>
-            <div class="img-holder">
-              <img src="./images/work-6.png" alt>
+            <div class="works-slide">
+              <div class="row">
+                <div class="img-holder">
+                  <img src="./images/work-10.jpg" alt>
+                </div>
+                <div class="img-holder">
+                  <img src="./images/work-11.jpeg" alt>
+                </div>
+                <div class="img-holder">
+                  <img src="./images/work-12.png" alt>
+                </div>
+              </div>
+              <div class="row">
+                <div class="img-holder">
+                  <img src="./images/work-13.jpeg" alt>
+                </div>
+                <div class="img-holder">
+                  <img src="./images/work-14.jpg" alt>
+                </div>
+                <div class="img-holder">
+                  <img src="./images/work-15.png" alt>
+                </div>
+              </div>
+              <div class="more">Show More.</div>
             </div>
           </div>
-          <div class="more">Show More.</div>
         </div>
       </div>
     </div>
     <!-- End Our Work -->
     <!-- Start Blog Stories -->
-    <div id="stories" class="stories">
+    <div id="stories" class="stories section">
       <div class="container">
         <img src="./images/our-work-shape.png" alt>
         <div class="content">
@@ -175,41 +238,101 @@
               <h1>Check Our News</h1>
             </div>
             <div class="sliders">
-              <a href="#" class="go-left">
+              <button disabled="true" value="slide-left" class="btn-slide">
                 <i class="fa-solid fa-arrow-left"></i>
-              </a>
-              <a href="#" class="go-right">
+              </button>
+              <button value="slide-right" class="btn-slide active">
                 <i class="fa-solid fa-arrow-right"></i>
-              </a>
+              </button>
             </div>
           </div>
           <div class="stories-wrapers">
-            <div class="wraper active">
-              <h4>New Adventure</h4>
-              <p class="date">17 March 2019</p>
-              <p>
-                Vestibulum ac diam sit amet quam vehicula elementum amet est
-                on dui. Nulla porttitor accumsan tincidunt.
-              </p>
-              <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+            <div class="row">
+              <div class="wraper active">
+                <h4>New Adventure</h4>
+                <p class="date">17 March 2019</p>
+                <p>
+                  Vestibulum ac diam sit amet quam vehicula elementum amet est
+                  on dui. Nulla porttitor accumsan tincidunt.
+                </p>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+              <div class="wraper">
+                <h4>New Adventure</h4>
+                <p class="date">17 March 2019</p>
+                <p>
+                  Vestibulum ac diam sit amet quam vehicula elementum amet est
+                  on dui. Nulla porttitor accumsan tincidunt.
+                </p>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+              <div class="wraper">
+                <h4>New Adventure</h4>
+                <p class="date">17 March 2019</p>
+                <p>
+                  Vestibulum ac diam sit amet quam vehicula elementum amet est
+                  on dui. Nulla porttitor accumsan tincidunt.
+                </p>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
             </div>
-            <div class="wraper">
-              <h4>New Adventure</h4>
-              <p class="date">17 March 2019</p>
-              <p>
-                Vestibulum ac diam sit amet quam vehicula elementum amet est
-                on dui. Nulla porttitor accumsan tincidunt.
-              </p>
-              <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+            <div class="row">
+              <div class="wraper">
+                <h4>New Adventure</h4>
+                <p class="date">17 March 2019</p>
+                <p>
+                  Vestibulum ac diam sit amet quam vehicula elementum amet est
+                  on dui. Nulla porttitor accumsan tincidunt.
+                </p>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+              <div class="wraper">
+                <h4>New Adventure</h4>
+                <p class="date">17 March 2019</p>
+                <p>
+                  Vestibulum ac diam sit amet quam vehicula elementum amet est
+                  on dui. Nulla porttitor accumsan tincidunt.
+                </p>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+              <div class="wraper">
+                <h4>New Adventure</h4>
+                <p class="date">17 March 2019</p>
+                <p>
+                  Vestibulum ac diam sit amet quam vehicula elementum amet est
+                  on dui. Nulla porttitor accumsan tincidunt.
+                </p>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
             </div>
-            <div class="wraper">
-              <h4>New Adventure</h4>
-              <p class="date">17 March 2019</p>
-              <p>
-                Vestibulum ac diam sit amet quam vehicula elementum amet est
-                on dui. Nulla porttitor accumsan tincidunt.
-              </p>
-              <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+            <div class="row">
+              <div class="wraper">
+                <h4>New Adventure</h4>
+                <p class="date">17 March 2019</p>
+                <p>
+                  Vestibulum ac diam sit amet quam vehicula elementum amet est
+                  on dui. Nulla porttitor accumsan tincidunt.
+                </p>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+              <div class="wraper">
+                <h4>New Adventure</h4>
+                <p class="date">17 March 2019</p>
+                <p>
+                  Vestibulum ac diam sit amet quam vehicula elementum amet est
+                  on dui. Nulla porttitor accumsan tincidunt.
+                </p>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+              <div class="wraper">
+                <h4>New Adventure</h4>
+                <p class="date">17 March 2019</p>
+                <p>
+                  Vestibulum ac diam sit amet quam vehicula elementum amet est
+                  on dui. Nulla porttitor accumsan tincidunt.
+                </p>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
             </div>
           </div>
         </div>
@@ -217,20 +340,12 @@
     </div>
     <!-- End Blog Stories -->
     <!-- Start Contact Us -->
-    <div id="contact-us" class="contact-us">
+    <div id="contact-us" class="contact-us section">
       <div class="container">
         <div class="head">
           <div class="text">
             <p>CONTACT US</p>
             <h1>Get In Touch</h1>
-          </div>
-          <div class="sliders">
-            <a href="#" class="go-left">
-              <i class="fa-solid fa-arrow-left"></i>
-            </a>
-            <a href="#" class="go-right">
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
           </div>
         </div>
         <form action>
@@ -244,7 +359,7 @@
     </div>
     <!-- End Contact Us -->
     <!-- Start Footer -->
-    <footer id="footer">
+    <footer class="section" id="footer">
       <div class="container">
         <p class="page-title">DOOB</p>
         <h1>CreativITIY ABOVE</h1>

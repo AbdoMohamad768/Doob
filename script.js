@@ -17,6 +17,24 @@ let currentComment = 0;
 let currentStoriesRow = 0;
 let currentworksSlide = 0;
 
+const sectionObserver = new IntersectionObserver(
+  (entries, observer) => {
+    const [entry] = entries;
+
+    if (entry.isIntersecting) {
+      entry.target.classList.remove("section-hidden");
+      observer.unobserve(entry.target);
+    }
+  },
+  {
+    root: null,
+    threshold: 0.1,
+  }
+);
+sections.forEach((section) => {
+  sectionObserver.observe(section);
+});
+
 const deActivateBtn = function (btn) {
   btn.setAttribute("disabled", "true");
   btn.classList.remove("active");

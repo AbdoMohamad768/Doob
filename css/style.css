@@ -27,6 +27,7 @@ html {
 
 body {
   font-family: "Work Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -53,6 +54,13 @@ button {
 }
 textarea {
   resize: none;
+}
+.section {
+  transition: 0.5s;
+}
+.section-hidden {
+  transform: translateY(100%);
+  opacity: 0;
 }
 /* Small Screens */
 
@@ -747,7 +755,6 @@ button.main-btn:hover {
 
 /* Start Contact Us */
 .contact-us {
-  padding-top: 100px;
   padding-bottom: 100px;
 }
 .contact-us .head {
